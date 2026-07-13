@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rashana Shakya — UI/UX Portfolio</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION (same block is copied at the top of every page)
+     ============================================================ -->
+<nav class="site-nav">
+  <div class="wrap">
+    <!-- EDIT: your name/logo text -->
+    <a href="index.html" class="brand">Rashana Shakya</a>
+    <ul class="nav-links">
+      <li><a href="index.html#home" class="active">Home</a></li>
+      <li><a href="index.html#about">About me</a></li>
+      <li><a href="case-study.html">Case study</a></li>
+      <li><a href="file:///C:/xampp/htdocs/portfolio/UI_UX_Internship_Resume%20pdf.pdf">Resume</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO / HOME
+     ============================================================ -->
+<section id="home" style="padding-top: 72px;">
+  <div class="wrap">
+    <div class="grid-2" style="align-items: center; gap: 56px;">
+      <div>
+        <span class="badge">Available for Internship 2026</span>
+        <h1 style="font-size: clamp(2.4rem, 5vw, 3.4rem); margin-top: 20px;">
+          <!-- EDIT: your name -->
+          Rashana Shakya
+        </h1>
+        <h2 style="font-size: clamp(1.3rem, 3vw, 1.7rem); font-weight: 600; color: var(--text-muted);">
+          <!-- EDIT: your title / field of study -->
+          <span style="color: var(--blue-accent);">UI/UX Design</span> | Bachelor in Information Management
+        </h2>
+        <p style="font-size: 1.05rem; color: var(--text-muted); max-width: 480px; margin-top: 18px;">
+          <!-- EDIT: your intro paragraph -->
+          Final-semester student transitioning into UI/UX design. I focus on
+          identifying real user pain points and translating them into clear,
+          usable interfaces. Currently seeking a UI/UX design internship.
+        </p>
+        <div style="display:flex; gap: 14px; margin-top: 28px;">
+          <a href="https://www.figma.com/proto/bwEuZFbxO5GjRgAHo2in4Y/Untitled?node-id=496-8674&t=1kUhNbiL9hLNvFU4-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" class="btn btn-outline">Desktop Prototype →</a>
+          <a href="https://www.figma.com/proto/bwEuZFbxO5GjRgAHo2in4Y/Untitled?node-id=617-11908&t=8jiGHm0Whi6sTJyR-1&scaling=scale-down&content-scaling=fixed&page-id=244%3A1156&starting-point-node-id=617%3A11908" class="btn btn-outline">Mobile Prototype</a>
+        </div>
+      </div>
+
+      <!-- Photo placeholder: replace the <img> below with your own
+           photo once you have a file, e.g. <img src="photo.jpg"> -->
+      <div style="margin-left:200px; width:320px; height:420px; border-radius:20px; overflow:hidden; border:1px solid var(--border-soft);">
+        <img src="images/profile.jpg"
+          alt="Portrait of Raahana"
+          style="width:150%; height:100%; object-fit:cover; object-position:center top; display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT ME
+     ============================================================ -->
+<section id="about" class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 style="font-size: 2rem;">About me</h2>
+      <div style="width: 48px; height: 4px; background: var(--blue-accent); border-radius: 4px; margin-top: 10px;"></div>
+    </div>
+
+    <div class="grid-2" style="grid-template-columns: 1.4fr 1fr; align-items: start;">
+      <div class="card">
+        <h3>My Journey</h3>
+        <!-- EDIT: your story, 2-3 short paragraphs -->
+        <p>
+          I'm passionate about UI/UX design and fascinated by how thoughtful
+          design can solve real user problems. I enjoy understanding user
+          behavior and perception, and exploring how design decisions
+          influence usability and the overall experience.
+        </p>
+        <p>
+          As a student, this curiosity led me to start building hands-on
+          design skills through self-directed projects in Figma.
+        </p>
+        <p>
+          I'm currently seeking a UI/UX design internship where I can keep
+          learning by doing and contribute to real user-centered products.
+        </p>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap: 20px;">
+        <div class="card">
+          <p style="font-size:0.8rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-muted); margin-bottom:14px;">
+            Technical skills
+          </p>
+          <!-- EDIT: swap these for your own skills -->
+          <div style="display:flex; flex-wrap:wrap; gap:10px;">
+            <span class="tag">Figma</span>
+            <span class="tag">Wireframing</span>
+            <span class="tag">Prototyping</span>
+            <span class="tag">User Research</span>
+            <span class="tag">User-Centered Thinking</span>
+            <span class="tag">Canva</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Requirement Gathering</span>
+
+          </div>
+        </div>
+
+        <div class="callout-navy">
+          <p style="font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase; color: var(--text-on-navy-muted); margin-bottom: 10px;">Education</p>
+          <!-- EDIT: your degree + graduation year -->
+          <h3 style="margin-bottom: 6px;">Bachelor in Information Management</h3>
+          <p style="margin: 0;">Graduating 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACTS
+     ============================================================ -->
+<section class="tight" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 style="font-size: 2rem;">Contacts</h2>
+      <div style="width:48px; height:4px; background:var(--blue-accent); border-radius:4px; margin-top:10px;"></div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:20px;">
+
+      <!-- Email -->
+      <div class="card" style="display:flex; flex-direction:column; align-items:center; text-align:center; gap:10px;">
+        <span style="font-size:28px;">✉️</span>
+        <h4>Email</h4>
+        <a href="mailto:shakyarashana2@gmail.com">
+          shakyarashana2@gmail.com
+        </a>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="card" style="display:flex; flex-direction:column; align-items:center; text-align:center; gap:10px;">
+        <i class="fa-brands fa-linkedin" style="font-size:32px; color:#0A66C2;"></i>
+        <h4>LinkedIn</h4>
+        <a href="https://www.linkedin.com/in/rashana-shakya-88655641a/"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Profile
+        </a>
+      </div>
+
+      <!-- Behance -->
+      <div class="card" style="display:flex; flex-direction:column; align-items:center; text-align:center; gap:10px;">
+        <i class="fa-brands fa-behance" style="font-size:32px; color:#1769FF;"></i>
+        <h4>Behance</h4>
+        <a href="https://www.behance.net/rashanashakya"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Portfolio
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <!-- EDIT: Rashana Shakya -->
+  © 2026 Rashana Shakya. Built with care.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
