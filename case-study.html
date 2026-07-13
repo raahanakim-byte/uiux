@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Case Study — Rashana Shakya</title>
+<title>Case Study — The Booktoria Redesign | Rashana Shakya</title>
 <link rel="stylesheet" href="styles.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,9 +16,15 @@
     <a href="index.html" class="brand">Rashana Shakya</a>
     <ul class="nav-links">
       <li><a href="index.html#home">Home</a></li>
-      <li><a href="index.html#about">About me</a></li>
-      <li><a href="case-study.html" class="active">Case study</a></li>
-      <li><a href="file:///C:/xampp/htdocs/portfolio 3/UI_UX_Internship_Resume%20pdf.pdf">Resume</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li class="theme-toggle-wrap">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+      </li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -26,321 +32,220 @@
   </div>
 </nav>
 
-<!-- ============================================================
-     TITLE
-     ============================================================ -->
-<section class="tight" style="text-align:center; padding-bottom: 48px;">
+<section class="tight" style="text-align:center; padding-bottom: 48px; padding-top: 120px;">
   <div class="wrap">
-    <span class="eyebrow">Case study</span>
-    <!-- EDIT: your project title -->
-    <h1 style="font-size: clamp(2rem, 4vw, 2.7rem);">The Booktoria Redesign</h1>
+    <span class="eyebrow reveal">Case Study</span>
+    <h1 class="reveal reveal-delay-1" style="font-size: clamp(2rem, 4vw, 2.7rem);">The Booktoria Redesign</h1>
   </div>
 </section>
 
-<!-- ============================================================
-     HERO MOCKUP (fake browser window — swap for a real screenshot
-     later by replacing this whole .browser-frame block with
-     <img src="your-screenshot.png" style="border-radius:20px;">)
-     ============================================================ -->
 <section style="padding-top:0;">
-  <div class="wrap">
-    <img src="images/hero section.png"
-     alt="Booktoria Homepage"
-     style="width:100%; border-radius:20px; display:block;">
+  <div class="wrap reveal">
+    <img src="images/hero%20section.png" alt="Booktoria Homepage" class="cs-hero-image">
   </div>
 </section>
 
-<!-- ============================================================
-     STUDY OVERVIEW
-     ============================================================ -->
 <section>
-  <div class="wrap grid-2" style="grid-template-columns: 1.5fr 1fr; align-items:start;">
-    <div>
-      <!-- EDIT: your project name -->
-      <h2>The Booktoria Study</h2>
-      <!-- EDIT: 1-2 paragraph project summary -->
-      <p style="color: var(--text-muted); max-width: 560px;">
-        Booktoria is a bookstore website offering both new and secondhand books, including a thrift/resale section. While the site had a functional core browsing, filtering, and checkout it lacked key elements that build buyer trust and support discovery.
-      </p>
-      <p style="color: var(--text-muted); max-width: 560px;">
-        As a self-directed redesign project, I audited the site, identified critical UX gaps, and redesigned four core screens to improve product trust and discovery
-      </p>
-    </div>
-    <div class="card">
-      <!-- EDIT: your role -->
-      <p style="font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-muted); margin-bottom:6px;">My role</p>
-      <p style="font-weight:600; margin-bottom:18px;">UX/UI Design (research, wireframing, high-fidelity design)</p>
-      <!-- EDIT: your tools -->
-      <p style="font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-muted); margin-bottom:6px;">Tools</p>
-      <p style="font-weight:600; margin-bottom:18px;">Figma</p>
-      <!-- EDIT: platforms -->
-      <p style="font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-muted); margin-bottom:6px;">Platforms</p>
-      <p style="font-weight:600; margin:0;">Web: Desktop + Mobile</p>
+  <div class="wrap">
+    <div class="grid-2" style="grid-template-columns: 1.5fr 1fr; align-items:start;">
+      <div class="reveal">
+        <h2>The Booktoria Study</h2>
+        <p style="color: var(--text-muted); max-width: 560px;">
+          Booktoria is a bookstore website offering both new and secondhand books, including a thrift/resale section. While the site had a functional core — browsing, filtering, and checkout — it lacked key elements that build buyer trust and support discovery.
+        </p>
+        <p style="color: var(--text-muted); max-width: 560px;">
+          As a self-directed redesign project, I audited the site, identified critical UX gaps, and redesigned four core screens to improve product trust and discovery.
+        </p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <p class="cs-section-label">My Role</p>
+        <p class="cs-section-value">UX/UI Design (research, wireframing, high-fidelity design)</p>
+        <p class="cs-section-label">Tools</p>
+        <p class="cs-section-value">Figma</p>
+        <p class="cs-section-label">Platforms</p>
+        <p class="cs-section-value" style="margin-bottom:0;">Web: Desktop + Mobile</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     THE PROBLEM
-     ============================================================ -->
 <section class="tight">
-  <div class="wrap">
-    <div class="callout-dark">
-      <h3 style="font-size: 1.5rem;">The Problem</h3>
-      <!-- EDIT: 2-3 short problem statements, one per paragraph -->
-      <p>Booktoria had a functional buying flow, but users had no way to evaluate whether a book was worth buying there were no descriptions or reviews on product pages.</p>
-      <p>The homepage offered no starting point for discovery, forcing users to search blindly with no bestsellers or featured picks. </p>
-      <p>These weren't cosmetic issues they sat directly on the path to purchase, affecting whether a visitor converted into a buyer.</p>
+  <div class="wrap reveal">
+    <div class="callout-dark" style="background:linear-gradient(135deg, var(--accent), #be123c); color:#fff; border-radius:var(--radius-lg); padding:44px;">
+      <h3 style="font-size: 1.5rem; color:#fff;">The Problem</h3>
+      <p style="color:rgba(255,255,255,0.88);">Booktoria had a functional buying flow, but users had no way to evaluate whether a book was worth buying — there were no descriptions or reviews on product pages.</p>
+      <p style="color:rgba(255,255,255,0.88);">The homepage offered no starting point for discovery, forcing users to search blindly with no bestsellers or featured picks.</p>
+      <p style="color:rgba(255,255,255,0.88); margin-bottom:0;">These weren't cosmetic issues — they sat directly on the path to purchase, affecting whether a visitor converted into a buyer.</p>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     DESKTOP EXPERIENCE
-     ============================================================ -->
 <section>
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <h2 style="font-size:1.8rem;">Desktop Experience</h2>
+      <div class="section-divider"></div>
       <p>Optimizing for deep discovery and detailed comparison.</p>
     </div>
 
     <div class="grid-2">
-
-      <!-- Homepage -->
-      <div>
-        <div class="card" style="padding:20px; background:#111827; border-radius:20px;">
-          <img src="images/booktoria_home page.png"
-               alt="Homepage"
-               style="width:100%; border-radius:12px; display:block;">
+      <div class="cs-showcase-item reveal">
+        <div class="cs-showcase-image">
+          <img src="images/booktoria_home%20page.png" alt="Homepage">
         </div>
-
-        <h4 style="margin-top:18px;">Homepage</h4>
-
-        <p style="color:var(--text-muted);">
-          Added a <strong>Bestsellers/Featured</strong> section to give users an immediate starting point for discovery instead of relying on blind search.
-        </p>
+        <h4>Homepage</h4>
+        <p>Added a <strong>Bestsellers/Featured</strong> section to give users an immediate starting point for discovery instead of relying on blind search.</p>
       </div>
 
-      <!-- Search -->
-      <div>
-        <div class="card" style="padding:20px; background:#111827; border-radius:20px;">
-          <img src="images/search.png"
-               alt="Search and Browse"
-               style="width:100%; border-radius:12px; display:block;">
+      <div class="cs-showcase-item reveal reveal-delay-1">
+        <div class="cs-showcase-image">
+          <img src="images/search.png" alt="Search and Browse">
         </div>
-
-        <h4 style="margin-top:18px;">Search &amp; Browse</h4>
-
-        <p style="color:var(--text-muted);">
-          Introduced filtering by author and stock availability, plus rating-based sorting to help users narrow results faster.
-        </p>
+        <h4>Search &amp; Browse</h4>
+        <p>Introduced filtering by author and stock availability, plus rating-based sorting to help users narrow results faster.</p>
       </div>
 
-      <!-- Detail -->
-      <div>
-        <div class="card" style="padding:20px; background:#111827; border-radius:20px;">
-          <img src="images/view.png"
-               alt="Book Details"
-               style="width:100%; border-radius:12px; display:block;">
+      <div class="cs-showcase-item reveal reveal-delay-2">
+        <div class="cs-showcase-image">
+          <img src="images/view.png" alt="Book Details">
         </div>
-
-        <h4 style="margin-top:18px;">Detail Page</h4>
-
-        <p style="color:var(--text-muted);">
-          Added an expandable description and reviews so users can confidently evaluate books before purchasing.
-        </p>
+        <h4>Detail Page</h4>
+        <p>Added an expandable description and reviews so users can confidently evaluate books before purchasing.</p>
       </div>
 
-      <!-- Cart -->
-      <div>
-        <div class="card" style="padding:20px; background:#111827; border-radius:20px;">
-          <img src="images/cart.png"
-               alt="Cart"
-               style="width:100%; border-radius:12px; display:block;">
+      <div class="cs-showcase-item reveal reveal-delay-3">
+        <div class="cs-showcase-image">
+          <img src="images/cart.png" alt="Cart">
         </div>
-
-        <h4 style="margin-top:18px;">Cart</h4>
-
-        <p style="color:var(--text-muted);">
-          Added a clear price breakdown to improve pricing transparency and reduce cart abandonment.
-        </p>
+        <h4>Cart</h4>
+        <p>Added a clear price breakdown to improve pricing transparency and reduce cart abandonment.</p>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     MOBILE EXPERIENCE
-     ============================================================ -->
 <section class="tight">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <h2 style="font-size:1.8rem;">Mobile Experience</h2>
-      <!-- EDIT: why mobile mattered for this product -->
+      <div class="section-divider"></div>
       <p>Designed a mobile version so the same trust-building improvements carry across devices.</p>
     </div>
-    <div class="grid-4">
-      <div class="phone-frame">
-        <div class="frame-body">
-          <img src="images/homep.png"
-            alt="Mobile Homepage"
-            style="width:100%; height:100%; object-fit:cover; display:block;">
-          </div>
+    <div class="mockup-grid reveal">
+      <div class="phone-mockup">
+        <img src="images/homep.png" alt="Mobile Homepage">
       </div>
-      <div class="phone-frame">
-        <div class="frame-body">
-          <img src="images/searchp.png"
-            alt="Mobile Browse"
-            style="width:100%; height:100%; object-fit:cover; display:block;">
-        </div>
+      <div class="phone-mockup">
+        <img src="images/searchp.png" alt="Mobile Browse">
       </div>
-      <div class="phone-frame">
-        <div class="frame-body">
-          <img src="images/viewp.png"
-            alt="Mobile Book Details"
-            style="width:100%; height:100%; object-fit:cover; display:block;">
-          </div>
-        </div>
-      <div class="phone-frame">
-        <div class="frame-body">
-          <img src="images/cartp.png"
-            alt="Mobile Checkout"
-            style="width:100%; height:100%; object-fit:cover; display:block;">
-          </div>
-        </div>
+      <div class="phone-mockup">
+        <img src="images/viewp.png" alt="Mobile Book Details">
+      </div>
+      <div class="phone-mockup">
+        <img src="images/cartp.png" alt="Mobile Checkout">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     BEFORE & AFTER
-     ============================================================ -->
 <section>
   <div class="wrap" style="text-align:center;">
-    <h2 style="font-size:1.8rem; margin-bottom:36px;">Before &amp; After</h2>
-
-    <!-- Old Design -->
-    <p style="font-size:0.8rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-muted); margin-bottom:14px;">
-      Old Design
-    </p>
-
-    <div style="background:#111827; padding:20px; border-radius:20px; max-width:600px; margin:0 auto 40px;">
-      <img src="images/old_design.png"
-           alt="Original Booktoria Design"
-           style="width:100%; border-radius:12px; display:block;">
+    <div class="section-head reveal" style="text-align:center;">
+      <h2 style="font-size:1.8rem;">Before &amp; After</h2>
+      <div class="section-divider" style="margin:12px auto 0;"></div>
     </div>
 
-    <!-- Redesigned -->
-    <p style="font-size:0.8rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-muted); margin-bottom:14px;">
-      Redesigned
-    </p>
-
-    <div style="background:#111827; padding:20px; border-radius:20px; max-width:600px; margin:0 auto;">
-      <img src="images/redesign.png"
-           alt="Redesigned Booktoria"
-           style="width:100%; border-radius:12px; display:block;">
+    <p class="reveal" style="font-size:0.8rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-muted); margin-bottom:14px;">Old Design</p>
+    <div class="before-after-image reveal reveal-delay-1">
+      <img src="images/old_design.png" alt="Original Booktoria Design">
     </div>
 
+    <p class="reveal" style="font-size:0.8rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-muted); margin:40px 0 14px;">Redesigned</p>
+    <div class="before-after-image reveal reveal-delay-2">
+      <img src="images/redesign.png" alt="Redesigned Booktoria">
+    </div>
   </div>
 </section>
 
-<!-- ============================================================
-     KEY IMPROVEMENT
-     ============================================================ -->
 <section class="tight" style="padding-top:0;">
-  <div class="wrap">
-    <div class="callout-navy" style="border-left: 4px solid var(--blue-accent);">
-      <h3 style="font-size:1.2rem;">✓ Key improvement</h3>
-      <!-- EDIT: one paragraph summarizing the overall impact -->
-      <p style="margin:0;">
+  <div class="wrap reveal">
+    <div class="callout-navy" style="background:var(--navy-950); color:var(--text-on-navy); border-radius:var(--radius-lg); padding:40px; border-left:4px solid var(--accent);">
+      <h3 style="color:#fff; font-size:1.2rem;">
+        <i class="fa-solid fa-check" style="color:var(--accent);"></i> Key improvement
+      </h3>
+      <p style="color:var(--text-on-navy-muted); margin:0;">
         Booktoria lacked the information users needed to make confident purchasing decisions. My redesign addressed these gaps by adding reviews, book descriptions, bestseller recommendations, and transparent pricing to improve trust, discovery, and the overall user experience.
       </p>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     CTA
-     ============================================================ -->
 <section class="tight">
   <div class="wrap">
-
-    <div class="card" style="text-align:center; padding:40px;">
-      <h2 style="font-size:1.6rem; margin-bottom:16px;">
-        Experience the Solution
-      </h2>
-
-      <p style="color:var(--text-muted); margin-bottom:28px;">
-        Explore the interactive prototypes and experience the redesigned Booktoria interface.
-      </p>
-
-      <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
-        <a href="https://www.figma.com/proto/bwEuZFbxO5GjRgAHo2in4Y/Untitled?node-id=496-8674&t=FoJ2WQnzz3OTCw9r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn btn-outline">
-          View Desktop Prototype →
+    <div class="card cs-cta-card reveal">
+      <h2>Experience the Solution</h2>
+      <p>Explore the interactive prototypes and experience the redesigned Booktoria interface.</p>
+      <div class="cs-cta-actions">
+        <a href="https://www.figma.com/proto/bwEuZFbxO5GjRgAHo2in4Y/Untitled?node-id=496-8674&t=FoJ2WQnzz3OTCw9r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          Desktop Prototype <i class="fa-solid fa-arrow-right"></i>
         </a>
-
-        <a href="https://www.figma.com/proto/bwEuZFbxO5GjRgAHo2in4Y/Untitled?node-id=617-11908&t=8jiGHm0Whi6sTJyR-1&scaling=scale-down&content-scaling=fixed&page-id=244%3A1156&starting-point-node-id=617%3A11908"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn btn-outline">
-          View Mobile Prototype →
+        <a href="https://www.figma.com/proto/bwEuZFbxO5GjRgAHo2in4Y/Untitled?node-id=617-11908&t=8jiGHm0Whi6sTJyR-1&scaling=scale-down&content-scaling=fixed&page-id=244%3A1156&starting-point-node-id=617%3A11908" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          Mobile Prototype <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
     </div>
-
   </div>
 </section>
 
-<section class="tight" style="padding-top: 0;">
+<section class="tight" style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head">
-      <h2 style="font-size: 2rem;">Contacts</h2>
-      <div style="width:48px; height:4px; background:var(--blue-accent); border-radius:4px; margin-top:10px;"></div>
+    <div class="section-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2 style="font-size: 2rem;">Let's Connect</h2>
+      <div class="section-divider"></div>
     </div>
 
-    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:20px;">
-
-      <!-- Email -->
-      <div class="card" style="display:flex; flex-direction:column; align-items:center; text-align:center; gap:10px;">
-        <span style="font-size:28px;">✉️</span>
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <div class="icon-wrap">
+          <i class="fa-regular fa-envelope"></i>
+        </div>
         <h4>Email</h4>
-        <a href="mailto:shakyarashana2@gmail.com">
-          shakyarashana2@gmail.com
-        </a>
+        <a href="mailto:shakyarashana2@gmail.com">shakyarashana2@gmail.com</a>
       </div>
 
-      <!-- LinkedIn -->
-      <div class="card" style="display:flex; flex-direction:column; align-items:center; text-align:center; gap:10px;">
-        <i class="fa-brands fa-linkedin" style="font-size:32px; color:#0A66C2;"></i>
+      <div class="contact-card reveal reveal-delay-1">
+        <div class="icon-wrap">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
         <h4>LinkedIn</h4>
-        <a href="https://www.linkedin.com/in/rashana-shakya-88655641a/"
-           target="_blank"
-           rel="noopener noreferrer">
-          View Profile
-        </a>
+        <a href="https://www.linkedin.com/in/rashana-shakya-88655641a/" target="_blank" rel="noopener noreferrer">View Profile</a>
       </div>
 
-      <!-- Behance -->
-      <div class="card" style="display:flex; flex-direction:column; align-items:center; text-align:center; gap:10px;">
-        <i class="fa-brands fa-behance" style="font-size:32px; color:#1769FF;"></i>
+      <div class="contact-card reveal reveal-delay-2">
+        <div class="icon-wrap">
+          <i class="fa-brands fa-behance"></i>
+        </div>
         <h4>Behance</h4>
-        <a href="https://www.behance.net/rashanashakya"
-           target="_blank"
-           rel="noopener noreferrer">
-          View Portfolio
-        </a>
+        <a href="https://www.behance.net/rashanashakya" target="_blank" rel="noopener noreferrer">View Portfolio</a>
       </div>
-
     </div>
   </div>
 </section>
+
+<button class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
 <footer class="site-footer">
-  © 2026 Rashana Shakya. Built with care.
+  <div class="wrap">
+    <div class="footer-socials">
+      <a href="mailto:shakyarashana2@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/rashana-shakya-88655641a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.behance.net/rashanashakya" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+    </div>
+    <p style="margin:0;">&copy; 2026 Rashana Shakya. Built with care.</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>

@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Resume — Your Name</title>
+<title>Resume — Rashana Shakya</title>
 <link rel="stylesheet" href="styles.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav class="site-nav">
   <div class="wrap">
-    <a href="index.html" class="brand">Your Name</a>
+    <a href="index.html" class="brand">Rashana Shakya</a>
     <ul class="nav-links">
       <li><a href="index.html#home">Home</a></li>
-      <li><a href="index.html#about">About me</a></li>
-      <li><a href="case-study.html">Case study</a></li>
-      <!--<li><a href="resume.html" class="active">Resume</a></li>-->
-      <li><a href="file:///C:/xampp/htdocs/portfolio 3/UI_UX_Internship_Resume%20pdf.pdf">Resume</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="resume.html" class="active">Resume</a></li>
+      <li class="theme-toggle-wrap">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+      </li>
     </ul>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -26,49 +32,69 @@
   </div>
 </nav>
 
-<section style="padding-top:64px;">
-  <div class="wrap" style="max-width: 760px;">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom: 40px;">
-      <h1 style="font-size:2rem; margin:0;">Resume</h1>
-      <!--
-        EASIEST OPTION: once you have a PDF resume, put the file in this
-        same folder (e.g. "resume.pdf") and this button will download it
-        automatically — no other change needed.
-      -->
-      <a href="resume.pdf" download class="btn btn-primary">Download PDF</a>
+<section style="padding-top:120px;">
+  <div class="wrap resume-container">
+    <div class="resume-header reveal">
+      <h1>Resume</h1>
+      <a href="UI_UX_Internship_Resume%20pdf.pdf" download class="btn btn-primary">
+        <i class="fa-solid fa-download"></i> Download PDF
+      </a>
     </div>
 
-    <div class="card">
-      <!-- EDIT: your name + title -->
-      <h2 style="margin-bottom:2px;">Your Name</h2>
+    <div class="card reveal">
+      <h2 style="margin-bottom:2px;">Rashana Shakya</h2>
       <p style="color:var(--text-muted); margin-bottom:24px;">UI/UX Designer</p>
 
-      <h4 style="text-transform:uppercase; font-size:0.8rem; letter-spacing:0.06em; color:var(--text-muted);">Education</h4>
-      <!-- EDIT: your education -->
-      <p><strong>Bachelor in Information Management</strong> — Graduating 2026</p>
+      <p class="cs-section-label">Education</p>
+      <p style="margin-bottom:24px;"><strong>Bachelor in Information Management</strong> — Graduating 2026</p>
 
-      <h4 style="text-transform:uppercase; font-size:0.8rem; letter-spacing:0.06em; color:var(--text-muted); margin-top:24px;">Skills</h4>
-      <!-- EDIT: your skills -->
-      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:10px;">
+      <p class="cs-section-label">Skills</p>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; margin-bottom:24px;">
         <span class="tag">Figma</span>
         <span class="tag">Wireframing</span>
         <span class="tag">Prototyping</span>
         <span class="tag">User Research</span>
+        <span class="tag">User-Centered Thinking</span>
+        <span class="tag">Canva</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Requirement Gathering</span>
       </div>
 
-      <h4 style="text-transform:uppercase; font-size:0.8rem; letter-spacing:0.06em; color:var(--text-muted); margin-top:24px;">Projects</h4>
-      <!-- EDIT: list your case studies / projects -->
-      <p><strong>The Project Name Redesign</strong> — self-directed UX case study. <a href="case-study.html" style="color:var(--blue-accent);">View case study →</a></p>
+      <p class="cs-section-label">Projects</p>
+      <p><strong>The Booktoria Redesign</strong> — Self-directed UX case study. <a href="case-study.html" style="color:var(--blue-accent); font-weight:600;">View case study <i class="fa-solid fa-arrow-right"></i></a></p>
 
-      <h4 style="text-transform:uppercase; font-size:0.8rem; letter-spacing:0.06em; color:var(--text-muted); margin-top:24px;">Contact</h4>
-      <!-- EDIT: your email -->
-      <p><a href="mailto:you@example.com" style="color:var(--blue-accent);">you@example.com</a></p>
+      <hr style="border:none; border-top:1px solid var(--border-soft); margin:24px 0;">
+
+      <p class="cs-section-label">Contact</p>
+      <p style="margin-bottom:4px;">
+        <i class="fa-regular fa-envelope" style="color:var(--blue-accent); margin-right:8px;"></i>
+        <a href="mailto:shakyarashana2@gmail.com" style="color:var(--blue-accent);">shakyarashana2@gmail.com</a>
+      </p>
+      <p style="margin-bottom:4px;">
+        <i class="fa-brands fa-linkedin" style="color:var(--blue-accent); margin-right:8px;"></i>
+        <a href="https://www.linkedin.com/in/rashana-shakya-88655641a/" target="_blank" rel="noopener noreferrer" style="color:var(--blue-accent);">LinkedIn Profile</a>
+      </p>
+      <p style="margin:0;">
+        <i class="fa-brands fa-behance" style="color:var(--blue-accent); margin-right:8px;"></i>
+        <a href="https://www.behance.net/rashanashakya" target="_blank" rel="noopener noreferrer" style="color:var(--blue-accent);">Behance Portfolio</a>
+      </p>
     </div>
   </div>
 </section>
 
+<button class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
 <footer class="site-footer">
-  © 2026 Your Name. Built with care.
+  <div class="wrap">
+    <div class="footer-socials">
+      <a href="mailto:shakyarashana2@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/rashana-shakya-88655641a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.behance.net/rashanashakya" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+    </div>
+    <p style="margin:0;">&copy; 2026 Rashana Shakya. Built with care.</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>
